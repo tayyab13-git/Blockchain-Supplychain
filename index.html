@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Blockchain Technology Transform The SupplyChain</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">A Blockchain Technology Transform The SupplyChain</h1>
+        <hr>
+        <p style="text-align: center;">Prove the authenticity of the product using the Ethereum blockchain.</p>
+    </div>
+
+    <div id="ftc-harvest">
+        <h2>Register New Farm</h2>
+        <div class="form-group">
+            Farm Name
+            <br>
+            <input type="text" id="farm-name" name="name" value="Hassan's Farm"><br>
+            Farm Description
+            <br>
+            <input type="text" id="farm-description" name="description" value="Awesome rawprodct farm in the middle of nowhere"><br>
+            Farm Location Name
+            <br>
+            <input type="text" id="farm-location-name" name="locationName" value="Middle of Nowhere"><br>
+            Farm Location Longitude
+            <br>
+            <input type="text" id="farm-location-longitude" name="locationLongitude" value="-38.239770"><br>
+            Farm Location Latitude
+            <br>
+            <input type="text" id="farm-location-latitude" name="locationLatitude" value="144.341490"><br>
+            <br>
+            <button class="btn-create" id="button" type="button" data-id="1">Register</button>
+        </div>
+        <div class=form-break></div>
+        <divv class="status" id="farm-register-status"></divv>
+
+        <h2>Farm Lifecycle Management</h2>
+        <div class="form-group">
+            Farm Id
+            <br>
+            <input type="number" id="farm-id" name="id" value=1><br>
+            <div class=button-div>
+                <button class="btn-read" id="button" type="button" data-id="2">Find Farm</button>
+            </div>
+        </div>
+        <h3>Farm Details</h3>
+        <div class="status" id="farm-search-status"></div>
+        <div id="farm-details"></div>
+        <div class=form-break></div>
+
+        <h2>Harvest New rawprodct</h2>
+        <div class="form-group">
+            Farm Id
+            <br>
+            <input type="text" id="rawprodct-farmId" name="farmId" value="1" size="50"><br>
+            rawprodct Name
+            <br>
+            <input type="text" id="rawprodct-name" name="name" value="sugarCane"><br>
+            rawprodct Vintage Year
+            <br>
+            <input type="text" id="rawprodct-vintageYear" name="vintageYear" value="2019"><br>
+            rawprodct Notes
+            <br>
+            <input type="text" id="rawprodct-notes" name="notes"
+                   value="There was awesome weather in the Middle of Nowhere, so the rawprodct has marvelous taste!"><br>
+            <button class="btn-create" id="button" type="button" data-id="3">Harvest</button>
+        </div>
+        <div class=form-break></div>
+        <div class="status" id="rawprodct-register-status"></div>
+
+        <h2>rawprodct Lifecycle Management</h2>
+        <div class="form-group">
+            rawprodct Id
+            <br>
+            <input type="number" id="rawprodct-id" name="id" value=1><br>
+            <div class=button-div>
+                <button class="btn-read" id="button" type="button" data-id="6">Find</button>
+                <button class="btn-update" id="button" type="button" data-id="4">Pack</button>
+                <button class="btn-update" id="button" type="button" data-id="5">forSale</button>
+            </div>
+        </div>
+        <div class="status" id="rawprodct-update-status"></div>
+        <h3>rawprodct Details</h3>
+        <div id="rawprodct-details"></div>
+        <h4>rawprodct Farm Details</h4>
+        <div class="status" id="rawprodct-search-status"></div>
+        <div id="rawprodct-farm-details"></div>
+        <div class=form-break></div>
+
+        <h2>Product Owner Console</h2>
+        <h3>Create New Product</h3>
+        <div class="form-group">
+            rawprodct Id
+            <br>
+            <input type="text" id="product-rawprodctId" name="rawprodctId" value="" size="50"><br>
+
+            <div class=button-div>
+                <button class="btn-create" id="button" type="button" data-id="7">Create</button>
+            </div>
+        </div>
+        <div class=form-break></div>
+        <div class="status" id="create-product-status"></div>
+
+        <h3>Find Product</h3>
+        <div class="form-group">
+            Product UPC
+            <br>
+            <input type="text" id="owner-search-product-upc" name="upc" value=1><br>
+            <button class="btn-read" id="button" type="button" data-id="13">Find</button>
+        </div>
+        <div class="status" id="owner-search-product-status"></div>
+        <h3>Product Details</h3>
+        <div id="owner-product-details"></div>
+        <h4>Product rawprodct Details</h4>
+        <div id="owner-product-rawprodct-details"></div>
+        <h4>Product Farm Details</h4>
+        <div id="owner-product-farm-details"></div>
+        <div class=form-break></div>
+
+        <h3>Sell Product</h3>
+        <div class="form-group">
+            Product UPC
+            <br>
+            <input type="number" id="owner-sell-product-upc" name="upc" value=1><br>
+            Product Price
+            <br>
+            <input type="text" id="owner-sell-product-price" name="price" value=10><br>
+            <button class="btn-update" id="button" type="button" data-id="8">Sell</button>
+        </div>
+        <div class="status" id="owner-sell-product-status"></div>
+        <div class=form-break></div>
+
+        <h3>Manage Product</h3>
+        <div class="form-group">
+            Product UPC
+            <br>
+            <input type="number" id="owner-manage-product-upc" name="upc" value=1><br>
+            Product Price
+            <br>
+            <button class="btn-update" id="button" type="button" data-id="10">Ship</button>
+            <button class="btn-update" id="button" type="button" data-id="12">Consume</button>
+        </div>
+        <div class="status" id="owner-manage-product-status"></div>
+        <div class=form-break></div>
+
+        <h2>Product Buyer Console</h2>
+        <h3>Find Product</h3>
+        <div class="form-group">
+            Product UPC
+            <br>
+            <input type="text" id="buyer-search-product-upc" name="rawprodctId" value="" size="50"><br>
+            <div class=button-div>
+                <button class="btn-read" id="button" type="button" data-id="14">Find</button>
+            </div>
+        </div>
+        <div class="status" id="buyer-search-product-status"></div>
+        <h3>Product Details</h3>
+        <div id="buyer-product-details"></div>
+        <h4>Product rawprodct Details</h4>
+        <div id="buyer-product-rawprodct-details"></div>
+        <h4>Product Farm Details</h4>
+        <div id="buyer-product-farm-details"></div>
+        <div class=form-break></div>
+
+        <h3>Buy Product</h3>
+        <div class="form-group">
+            Product UPC
+            <br>
+            <input type="text" id="buyer-buy-product-upc" name="upc" value="" size="50"><br>
+            Buyer's Bid
+            <br>
+            <input type="text" id="buyer-bid" name="bid" value="" size="50"><br>
+            <div class=button-div>
+                <button class="btn-update" id="button" type="button" data-id="9">Buy</button>
+            </div>
+        </div>
+        <div class="status" id="buy-product-status"></div>
+        <div class=form-break></div>
+
+        <h3>Receive Product</h3>
+        <div class="form-group">
+            Product UPC
+            <br>
+            <input type="text" id="buyer-receive-product-upc" name="rawprodctId" value="" size="50"><br>
+            <div class=button-div>
+                <button class="btn-update" id="button" type="button" data-id="11">Receive</button>
+            </div>
+        </div>
+        <div class="status" id="buyer-receive-product-status"></div>
+        <hr>
+    </div>
+
+    <h2>Transaction History<span id="ftc-history"></span></h2>
+    <div>
+        <ul id="ftc-events">
+            <!-- Events will appear here from app.js -->
+        </ul>
+        <br>
+        <hr>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="js/web3.min.js"></script> -->
+    <script src="src/js/truffle-contract.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+
+</html>

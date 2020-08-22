@@ -1,0 +1,17 @@
+{
+  "name": "product-supplychain",
+  "version": "1.0.0",
+  "description": "A Blockchain Technology Transform The Supply Chain",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "solc": "^0.7.0",
+    "truffle-hdwallet-provider": "^1.0.5"
+  }
+}
